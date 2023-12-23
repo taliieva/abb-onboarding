@@ -37,9 +37,9 @@ const Step1 = () => {
     index: 0,
     count: steps.length,
   });
-const router = useRouter()
+  const router = useRouter();
   return (
-    <Stack width='100%' height="100vh" bg="#F3F3F3">
+    <Stack width="100%" height="100vh" bg="#F3F3F3">
       <HStack bg="#fff" px="32px" height="64px" alignItems="center">
         <Image alt="logo" src="../images/logo-business.svg" height="33px" />
         <Flex w="100%" alignItems="center" justifyContent="flex-end">
@@ -225,8 +225,8 @@ const router = useRouter()
               // isDisabled={!asanImza?.companyResident}
               // onClick={() => setStep(1)}
               colorScheme="brand"
-              onClick={()=>{
-                router.push('step2')
+              onClick={() => {
+                router.push("step2");
               }}
             >
               Davam et
