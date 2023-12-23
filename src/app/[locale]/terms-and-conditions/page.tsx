@@ -14,12 +14,15 @@ import { useRouter } from "next/navigation";
 
 const TermsAndConditions = () => {
   const router = useRouter()
+  const handleClose = () => {
+    router.back();
+  };
   return (
     <>
   
 
       <Container maxWidth="1110px" height="1570px">
-      <CloseButton position='absolute' right={0} top={0} size="lg" m="30px" />
+      <CloseButton position='absolute' right={0} top={0} size="lg" m="30px" onClick={handleClose}/>
 
         <Center>
           <Image textAlign="center" src="../images/Loading.png" alt="logo" />
